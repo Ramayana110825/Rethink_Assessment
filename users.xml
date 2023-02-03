@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1:3306
+- Generation Time: Feb 03, 2023 at 05:20 AM
+- Server version: 5.7.36
+- PHP Version: 7.4.26
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="users" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="tb_blogs">
+                CREATE TABLE `tb_blogs` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(30) NOT NULL,
+                  `title` varchar(450) NOT NULL,
+                  `content` varchar(450) NOT NULL,
+                  `DandT` text NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="tb_users">
+                CREATE TABLE `tb_users` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(30) NOT NULL,
+                  `email` varchar(320) NOT NULL,
+                  `password` varchar(127) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'users'
+    -->
+    <database name="users">
+        <!-- Table tb_blogs -->
+        <table name="tb_blogs">
+            <column name="id">14</column>
+            <column name="username">rama</column>
+            <column name="title">dasda</column>
+            <column name="content">dasdasd</column>
+            <column name="DandT">02/03/2023 02:56:55 am</column>
+        </table>
+        <table name="tb_blogs">
+            <column name="id">13</column>
+            <column name="username">rafaell</column>
+            <column name="title">Hello 2nd Post</column>
+            <column name="content">Hello guyss I am Rafael</column>
+            <column name="DandT">02/03/2023 02:55:24 am</column>
+        </table>
+        <table name="tb_blogs">
+            <column name="id">12</column>
+            <column name="username">rafaell</column>
+            <column name="title">asdas</column>
+            <column name="content">dasdas</column>
+            <column name="DandT">02/03/2023 02:32:07 am</column>
+        </table>
+        <table name="tb_blogs">
+            <column name="id">15</column>
+            <column name="username">rama</column>
+            <column name="title">rama</column>
+            <column name="content">ramaa</column>
+            <column name="DandT">02/03/2023 02:57:03 am</column>
+        </table>
+        <!-- Table tb_users -->
+        <table name="tb_users">
+            <column name="id">3</column>
+            <column name="username">rafaell</column>
+            <column name="email">rafael.teberio11@gmail.com</column>
+            <column name="password">$2y$10$JuKoQyj8bpy1pdEZL82KfeHYIsYGUKvB6tBMjRiUKmUd/iDhiv63e</column>
+        </table>
+        <table name="tb_users">
+            <column name="id">4</column>
+            <column name="username">rama</column>
+            <column name="email">rafael@gmail.com</column>
+            <column name="password">$2y$10$YI4DIRGLGq7J8UbJ962xpeaHgcY3KvSwIC3KJEa3FptrheJveS9KC</column>
+        </table>
+    </database>
+</pma_xml_export>
